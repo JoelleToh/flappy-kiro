@@ -53,3 +53,10 @@ htmlcov/
 *.egg-info/
 dist/
 build/
+
+# Workshop materials and notes
+notes/
+*.pdf
+01 Intro.md
+.kiro/
+test/
