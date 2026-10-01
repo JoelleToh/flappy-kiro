@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Flappy Kiro</title>
+    <style>
+      /* Center the canvas on a dark retro backdrop. The canvas size itself is
+         driven by config.canvas in src/main.js; here we only handle page layout
+         and the bordered look (R1.1). */
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: #1b1f24;
+        font-family: "Courier New", Courier, monospace;
+        /* Keep taps on the canvas from scrolling/zooming the page on touch. */
+        overflow: hidden;
+      }
+      #game {
+        /* Solid 2px border framing the play area (R1.1). The intrinsic canvas
+           width/height are set from config.canvas in main.js. */
+        border: 2px solid #2c3e50;
+        background: #4ec0ca;
+        /* Crisp pixels for the retro sprite look. */
+        image-rendering: pixelated;
+        touch-action: none;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="game" width="512" height="640" aria-label="Flappy Kiro game"></canvas>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>

@@ -4,3 +4,5 @@
 spec driven development 
 
 Ai set at spec and on autopilot
+
+steering files -> if it comply to IMA
